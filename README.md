@@ -1,3 +1,16 @@
+### Descrição do Projeto
+
+O projeto visa ensinar as configurações padrão para unificar a base de codigo
+compartilhada entre varios desenvolvedores em uma mesma equipe.
+
+### O que é feito.
+
+- Configuração do eslint
+- Configuração do Prettier
+- Configuração do EditorConfig
+
+......
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
