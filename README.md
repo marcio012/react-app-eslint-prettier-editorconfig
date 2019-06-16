@@ -1,13 +1,182 @@
-### Descrição do Projeto
+# Descrição do Projeto
 
 O projeto visa ensinar as configurações padrão para unificar a base de codigo
 compartilhada entre varios desenvolvedores em uma mesma equipe.
 
-### O que é feito.
+**O que é feito**
 
 - Configuração do eslint
 - Configuração do Prettier
 - Configuração do EditorConfig
+
+## Instalação do Eslint
+
+1. Instalar o eslint
+
+```bash
+npx install eslint
+```
+
+ou
+
+```bash
+yarn add eslint -D
+```
+
+Apos as instalação temos que iniciar a configuração do eslint.
+
+```bash
+npx eslint--init
+```
+
+ou
+
+```bash
+yarn run eslint--init
+```
+
+Responda o questionário conforme a necessidade do seu projeto.
+Nesse projeto eu faço a seguinte configuração.
+
+1. Pergunta
+
+```Bash
+? How would you like to use ESLint?
+  To check syntax only
+  To check syntax and find problems
+❯ To check syntax, find problems, and enforce code style
+```
+
+2. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use?
+❯ JavaScript modules (import/export)
+  CommonJS (require/exports)
+  None of these
+```
+
+3. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? (Use arrow keys)
+❯ React
+  Vue.js
+  None of these
+```
+
+4. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)
+❯◉ Browser
+ ◯ Node
+```
+
+5. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+? How would you like to define a style for your project?
+❯ Use a popular style guide
+  Answer questions about your style
+  Inspect your JavaScript file(s)
+```
+
+6. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? (Use arrow keys)
+❯ Airbnb (https://github.com/airbnb/javascript)
+  Standard (https://github.com/standard/standard)
+  Google (https://github.com/google/eslint-config-google)
+```
+
+7. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? (Use arrow keys)
+❯ Airbnb (https://github.com/airbnb/javascript)
+  Standard (https://github.com/standard/standard)
+  Google (https://github.com/google/eslint-config-google)
+```
+
+8. Pergunta
+
+```Bash
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? (Press <space> to select, <a> to toggle all, <i> to invert selection)Browser
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? Airbnb (https://github.com/airbnb/javascript)
+? What format do you want your config file to be in?
+  JavaScript
+  YAML
+❯ JSON
+
+```
+
+### Questionário configurao e respondido
+
+Verifique que agora foi gerado um arquivo na raiz do projeto _.eslint.json_
+
+## Estilo de código
+
+**Prettier**
+Um estilizador de código
+
+## Editorconfig
+
+Vamos adicionar uma configuração que padroniza a formatação do nosso codigo.
+
+Estilos de identação tipos tab ou espaços, espaço no final do arquivo ou espaço no final da linha, serão agora genrenciados pelo editorconfig.
+
+```editorconfig
+root = true
+
+  [*]
+  indent_style = space
+  indent_size = 2
+  end_of_line = lf
+  charset = utf-8
+  trim_trailing_whitespace = true
+  insert_final_newline = true
+
+  [*.html]
+  indent_size = 4
+
+  [*.css]
+  indent_size = 4
+
+  [*.md]
+  trim_trailing_whitespace = false
+```
+
+E muito util quando ha muitos desenvolvedores na mesma base de codigo. 
+
+
+
+
 
 ......
 
@@ -79,3 +248,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+```
+
+```
